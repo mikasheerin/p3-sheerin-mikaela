@@ -23,7 +23,7 @@
   <script type="text/javascript" src="scripts/javascript.js"></script>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 
 </head>
 
@@ -31,19 +31,24 @@
 
   <header class="logosection">
     <h1> R E P R I S E </h1>
-    <h3>A microsite for the Spotify podcast, "Showstopper."</h3>
-    <p>All content is owned by the companies noted, and some video content is intended for mature audiences. This site is for educational purposes only.</p>
+    <div class="tagline">
+      <h3>A microsite for the Spotify podcast, "Showstopper."</h3>
+      <p>All content is owned by the companies noted, and some video content is intended for mature audiences. This site is for educational purposes only.</p>
+    </div>
   </header>
 
-  <main>
+  <main class="main">
     <section id="about" class="orangepink">
       <div id="aboutcopy">
         <h1>re·prise</h1>
         <h3>(n.) a repetition or further performance of something.</h3>
-        <p>This is a microsite for Showstopper, the podcast from Spotify Studios that looks back at the most memorable moments in TV history that all had one special ingredient: killer music. Throughout the series, Showstopper features the people who helped create these iconic TV moments: the music supervisors, showrunners, and talent.</p>
+        <p>This is a microsite for Showstopper, the podcast from Spotify Studios that looks back at the most memorable moments in TV history that all had one special ingredient: killer music. Throughout the series, Showstopper features the people who helped
+          create these iconic TV moments: the music supervisors, showrunners, and talent.</p>
       </div>
       <!-- Spotify Playlist -->
-      <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX1H32MrlR3uQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <div id="spotify">
+        <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX1H32MrlR3uQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
       <!-- Image Slider -->
       <div class="about-slider">
         <div>
@@ -59,11 +64,10 @@
           <a href="#PLL"><img src="images/PLL-about-slider.png" width ="500" alt="" title="Pretty Little Liars"/></a>
         </div>
       </div>
-
     </section>
 
-    <section class="pinkblue">
-      <article id="Atlanta">
+    <section id="showsection">
+      <article id="Atlanta" class="pinkblue">
         <a href="https://open.spotify.com/episode/6YlVVRJoULn2u58J9Zs0sh?si=xIP5d3ImSPe6GD0WwZoCag" target="_blank">
           <img src="images/Atlanta_Logo.png" alt="Atlanta" title="Atlanta"/>
         </a>
@@ -80,10 +84,8 @@
             </video>
         </a>
       </article>
-    </section>
 
-    <section class="orangepink">
-      <article id="BabyDriver">
+      <article id="BabyDriver" class="orangepink">
         <a href="https://open.spotify.com/episode/6YlVVRJoULn2u58J9Zs0sh?si=xIP5d3ImSPe6GD0WwZoCag" target="_blank">
           <img src="images/BabyDriver_Logo.png" alt="Baby Driver" title="Baby Driver"/>
         </a>
@@ -93,10 +95,8 @@
             films of 2017. </p>
         </aside>
       </article>
-    </section>
 
-    <section class="pinkblue">
-      <article id="Insecure">
+      <article id="Insecure" class="pinkblue">
         <a href="https://open.spotify.com/episode/4KplnOanGnfyCBV1v0rK5X?si=W-SEaUZ4S320z1HcuhxEdQ" target="_blank">
           <img src="images/Insecure_Logo.png" alt="Insecure" title="Insecure"/>
         </a>
@@ -106,10 +106,8 @@
             how the show’s songs and score give her character a special dimension.</p>
         </aside>
       </article>
-    </section>
 
-    <section class="orangepink">
-      <article id="PLL">
+      <article id="PLL" class="orangepink">
         <a href="https://open.spotify.com/episode/6GFfofkBLmYEYPLX0p1tpJ?si=FCTL-t5NQzy5ZX4J1fiQeQ" target="_blank">
           <img src="images/PLL_Logo.png" alt="Pretty Little Liars" title="Pretty Little Liars"/>
         </a>
@@ -130,6 +128,31 @@
         <li><a href="#Insecure">Insecure</a></li>
         <li><a href="#PLL">Pretty Little Liars</a></li>
       </ul>
+
+      <form name="finalproj" id="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
+
+        <h1>Contact</h1>
+
+        <div class="text">
+          <label for="name" class="label_input_wrap">Name: </label>
+          <input type="text" name="name" placeholder="Your name" id="name" required/>
+        </div>
+
+        <div class="email">
+          <label for="email" class="label_input_wrap">Email: </label>
+          <input type="email" name="email" placeholder="username@domain.com" id="email" required/>
+        </div>
+
+        <div class="textarea">
+          <label for="textarea" class="label_input_wrap">Message:</label>
+          <textarea id="textarea" maxlength="1000" cols="55" rows="5" placeholder="Your message" required></textarea>
+        </div>
+
+        <div class="submit">
+          <input type="submit" />
+        </div>
+
+      </form>
     </nav>
   </footer>
 
@@ -137,13 +160,13 @@
 </body>
 
 <!-- JS -->
-  <!-- fancybox -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="jquery.fancybox.min.js"></script>
-  <!-- slider -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="scripts/script.js"></script>
+<!-- fancybox -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="jquery.fancybox.min.js"></script>
+<!-- slider -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
 
 </html>

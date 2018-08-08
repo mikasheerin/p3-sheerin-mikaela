@@ -9,6 +9,11 @@ body {
   color: white;
 }
 
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
 header {
   background-image: url("../images/headerimage.jpg");
 	background-attachment: scroll;
@@ -18,12 +23,17 @@ header {
   text-align: left;
 }
 
-/* animation example */
-.hero-image-section img {
-  padding-top: 20px;
+/* animation */
+.logosection h1 {
   left: 0;
   animation-name: slide;
   animation-duration: 3s;
+  border: 5px solid white;
+  padding: 20px;
+  width: 650px;
+  font-size: 100px;
+  font-weight: 600;
+  text-align: center;
 }
 
 @keyframes slide {
@@ -35,6 +45,16 @@ header {
   }
 }
 
+.tagline {
+  width: 500px;
+  padding-top: 20px;
+}
+
+.tagline p{
+  font-size: 12px;
+  padding-top: 5px;
+}
+
 /* background gradients */
 .orangepink {
   background: linear-gradient(to top right, #fdc260, #e83a9b);
@@ -44,21 +64,51 @@ header {
   background: linear-gradient(to top right, #ffc7cf, #4024f1);
 }
 
+#Atlanta, #BabyDriver, #Insecure, #PLL {
+  padding: 50px;
+}
+
+/* about */
+
+#about{
+  padding: 50px;
+}
+
+#aboutcopy {
+  border: 5px solid white;
+  padding: 20px;
+  width: 500px;
+}
+
+#spotify {
+  float: right;
+  clear: both;
+}
+
+.about-slider{
+  width: 500px;
+}
+
 /* slider */
 .about-slider {
   align-content: center;
   margin: 100px auto;
 }
 
+#showsection p {
+  border: 5px solid white;
+  padding: 20px;
+  width: 500px;
+}
 
-/* footer examples */
+#showsection p::first-line {
+    font-weight: 600;
+  }
+
+/* footer */
 
 footer {
   padding: 20px 0;
-}
-
-footer.container {
-  text-align: center;
 }
 
 footer nav a {
@@ -69,6 +119,27 @@ footer nav a {
 }
 
 footer nav a:hover {
-  color: yellow;
+  color: #4024f1;
   transition: .3s;
+}
+
+label.label_input_wrap {
+  display: block;
+}
+
+form {
+   width: 50%;
+   padding: 50px;
+}
+
+label {
+  padding-bottom: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 50px;
+  background: white;
+  border-radius: 10px;
+  color: #4024f1;
+  font-size: 20px;
 }
