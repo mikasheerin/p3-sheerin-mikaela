@@ -11,7 +11,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/main.css" />
-  <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="fancybox-master/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <!-- Add the new slick-theme.css if you want the default styling -->
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -43,11 +43,11 @@
         <h1>re·prise</h1>
         <h3>(n.) a repetition or further performance of something.</h3>
         <p>This is a microsite for Showstopper, the podcast from Spotify Studios that looks back at the most memorable moments in TV history that all had one special ingredient: killer music. Throughout the series, Showstopper features the people who helped
-          create these iconic TV moments: the music supervisors, showrunners, and talent.</p>
+          create these iconic TV moments: the music supervisors, showrunners, and talent. Each podcast can be found by clicking the corresponding show title. Full songs can be found in the "Showstopper: Season One" playlist.</p>
       </div>
       <!-- Spotify Playlist -->
       <div id="spotify">
-        <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX1H32MrlR3uQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX1H32MrlR3uQ" width="300" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <!-- Image Slider -->
       <div class="about-slider">
@@ -68,21 +68,58 @@
 
     <section id="showsection">
       <article id="Atlanta" class="pinkblue">
+        <!-- Logo -->
         <a href="https://open.spotify.com/episode/6YlVVRJoULn2u58J9Zs0sh?si=xIP5d3ImSPe6GD0WwZoCag" target="_blank">
           <img src="images/Atlanta_Logo.png" alt="Atlanta" title="Atlanta"/>
         </a>
+        <!-- Copy -->
         <aside>
           <p> In this episode of "Showstopper", Naomi Zeichner talks with music supervisor, Jen Malone, alongside music consultant and writer, Fam Rothstein about their work on FX's Atlanta. They discuss defining a city-specific sound, creating a platform
             to showcase new and local artists, and the Migos cameo.</p>
         </aside>
-        <a data-fancybox="atlantagallery" href="#atlantavideos">
-          <video id="atlantavideos" width="500" controls>
+        <!-- Video Slider -->
+        <div class="atlanta-slider">
+          <div>
+            <a data-fancybox="atlantagallery" href="#atlantavideo1">
+          <video id="atlantavideo1" width="500" controls>
               <source src="videos/Atlanta_BeachHouse.m4v" type="video/m4v" />
               <source src="videos/Atlanta_BeachHouse.ogv" type="video/ogv" />
               <source src="videos/Atlanta_BeachHouse.webm" type="video/webm" />
               Your browser does not support HTML5 video.
             </video>
-        </a>
+          </a>
+          </div>
+          <div>
+            <a data-fancybox="atlantagallery" href="#atlantavideo2">
+            <video id="atlantavideo2" width="500" controls>
+                <source src="videos/Atlanta_ErikaBadu.m4v" type="video/m4v" />
+                <source src="videos/Atlanta_ErikaBadu.ogv" type="video/ogv" />
+                <source src="videos/Atlanta_ErikaBadu.webm" type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox="atlantagallery" href="#atlantavideo3">
+            <video id="atlantavideo3" width="500" controls>
+                <source src="videos/Atlanta_NoHook.m4v" type="video/m4v" />
+                <source src="videos/Atlanta_NoHook.ogv" type="video/ogv" />
+                <source src="videos/Atlanta_NoHook.webm" type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox="atlantagallery" href="#atlantavideo4">
+            <video id="atlantavideo4" width="500" controls>
+                <source src="videos/Atlanta_PaperBoi.m4v" type="video/m4v" />
+                <source src="videos/Atlanta_PaperBoi.ogv" type="video/ogv" />
+                <source src="videos/Atlanta_PaperBoi.webm" type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
+            </a>
+          </div>
+        </div>
       </article>
 
       <article id="BabyDriver" class="orangepink">
@@ -94,6 +131,54 @@
             In Episode 2 of Showstopper, Edgar Wright sits in to discuss how certain songs drove his vision for the film, influenced the narrative arc, and dictated choreography – plus how all that came together to deliver one of the most entertaining
             films of 2017. </p>
         </aside>
+        <!-- Video Slider -->
+        <div class="babydriver-slider">
+          <div>
+            <a data-fancybox href="https://www.youtube.com/watch?v=6XMuUVw7TOM">
+            <iframe id="babydriver1" width="560" height="315" src="https://www.youtube.com/embed/6XMuUVw7TOM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </a>
+          </div>
+          <div>
+            <a data-fancybox="babydrivergallery" href="#babydriver2">
+            <video id="babydriver2" width="500" controls>
+                <source src="videos/BabyDriver_Scene2.m4v" type="video/m4v" />
+                <source src="videos/BabyDriver_Scene2.ogv" type="video/ogv" />
+                <source src="videos/BabyDriver_Scene2.webm" type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox="babydrivergallery" href="#babydriver3">
+            <video id="babydriver3" width="500" controls>
+                <source src="videos/BabyDriver_Scene3.m4v" type="video/m4v" />
+                <source src="videos/BabyDriver_Scene3.ogv" type="video/ogv" />
+                <source src="videos/BabyDriver_Scene3.webm" type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox="babydrivergallery" href="#babydriver4">
+            <video id="babydriver4" width="500" controls>
+                <source src="videos/BabyDriver_Scene4.m4v" type="video/m4v" />
+                <source src="videos/BabyDriver_Scene4.ogv" type="video/ogv" />
+                <source src="videos/BabyDriver_Scene4.webm" type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox="babydrivergallery" href="#babydriver5">
+            <video id="babydriver5" width="500" controls>
+                <source src="videos/BabyDriver_LastScene.m4v" type="video/m4v" />
+                <source src="videos/BabyDriver_LastScene.ogv" type="video/ogv" />
+                <source src="videos/BabyDriver_LastScene.webm" type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
+            </a>
+          </div>
+        </div>
       </article>
 
       <article id="Insecure" class="pinkblue">
@@ -122,7 +207,7 @@
 
   <footer class="pinkblue">
     <nav>
-      <ul>
+      <ul class="footernav">
         <li><a href="#Atlanta">Atlanta</a></li>
         <li><a href="#BabyDriver">Baby Driver</a></li>
         <li><a href="#Insecure">Insecure</a></li>
@@ -162,7 +247,7 @@
 <!-- JS -->
 <!-- fancybox -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="jquery.fancybox.min.js"></script>
+<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
 <!-- slider -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
