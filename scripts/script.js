@@ -16,3 +16,15 @@ $(document).ready(function(){
     dots: true,
   });
 });
+
+$(document).ready(function(){
+  $('.insecure-slider ').slick({
+    dots: true,
+  });
+});
+
+$(document).ready(function(){
+  $('.PLL-slider ').slick({
+    dots: true,
+  });
+});
