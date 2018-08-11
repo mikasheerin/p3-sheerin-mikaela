@@ -67,47 +67,129 @@ header {
 
 
 
-/* about */
+/* about section */
 
 #about{
   padding: 50px;
   margin-bottom: 0;
+  position: relative;
 }
 
 #aboutcopy {
   border: 5px solid white;
   padding: 50px 100px 100px 50px;
   width: 500px;
-  float: left;
+  display: inline-block;
 }
 
 #spotify {
-  float: right;
+display: inline-block;
+position: absolute;
+  right: 50px;
 }
 
-/* slider */
 .about-slider {
   align-content: center;
   margin: 0 auto;
   width: 500px;
-  clear: right;
-  transform: translate(-50px, -170px)
+  margin-top: -70px;
 }
+
+/* show sections */
 
 #Atlanta, #BabyDriver, #Insecure, #PLL {
   padding: 50px;
 }
 
 
-#showsection p {
+.bordercopy p {
   border: 5px solid white;
   padding: 40px 100px 100px 40px;
   width: 500px;
 }
 
-#showsection p::first-line {
+.bordercopy p::first-line {
     font-weight: 600;
   }
+
+.show-copy {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+#Atlanta-podcastimage {
+  display: inline-block;
+  position: absolute;
+  margin-top: 140px;
+  margin-left: 100px;
+}
+
+#BabyDriver-podcastimage {
+  display: inline-block;
+position: absolute;
+margin-top: 175px;
+margin-left: 100px;
+}
+
+#Insecure-podcastimage {
+  display: inline-block;
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 100px;
+}
+
+#PLL-podcastimage {
+  display: inline-block;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 100px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  transition: .5s;
+}
+
+.pinkblue .overlay p {
+  color: #4024f1;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.orangepink .overlay p {
+  color: #e83a9b;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#Atlanta-podcastimage:hover .overlay {
+  opacity: 1;
+}
+
+#BabyDriver-podcastimage:hover .overlay {
+  opacity: 1;
+}
+
+#Insecure-podcastimage:hover .overlay {
+  opacity: 1;
+}
+
+#PLL-podcastimage:hover .overlay {
+  opacity: 1;
+}
+
+
+/* video sliders */
 
 .fancybox-content video {
   width: 100% !important;
@@ -117,7 +199,7 @@ header {
   align-content: center;
   margin: 0 auto;
   width: 500px;
-  transform: translate(-50px, -100px)
+  margin-top: -70px;
 }
 
 video#atlantavideo1, #atlantavideo2, #atlantavideo3, #atlantavideo4, #babydriver1, #babydriver2, #babydriver3, #babydriver4, #babydriver5, #insecurevideo1, #insecurevideo2, #insecurevideo3, #insecurevideo4, #insecurevideo5, #PLLvideo1, #PLLvideo2, #PLLvideo3, #PLLvideo4  {
@@ -132,6 +214,10 @@ footer {
   padding: 50px;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
 ul {
   list-style: none;
 }
@@ -156,21 +242,32 @@ label.label_input_wrap {
   display: block;
 }
 
-#test_form {
-  float: right;
-  overflow: visible;
+form#test_form {
+  display: inline-block;
+  margin-left: 100px;
 }
 
-.footernav {
-  float: left;
+nav.footernav {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
 }
+
 
 form {
    width: 50%;
 }
 
 label {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+}
+
+.text, .email, .textarea, .submit {
+  padding: 10px 0;
 }
 
 input[type="submit"] {
@@ -178,5 +275,13 @@ input[type="submit"] {
   background: white;
   border-radius: 10px;
   color: #4024f1;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  padding: 10px 50px;
+  background: #4024f1;
+  border-radius: 10px;
+  color: white;
   font-size: 20px;
 }
