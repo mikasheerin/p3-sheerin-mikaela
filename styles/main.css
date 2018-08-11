@@ -17,14 +17,15 @@ h1 {
 
 header {
   background-image: url("../images/headerimage.jpg");
-	background-attachment: scroll;
+  background-attachment: scroll;
   background-position: center;
-	background-size: cover;
-	padding: 100px 100px 500px 100px;
+  background-size: cover;
+  padding: 100px 100px 500px 100px;
   text-align: left;
 }
 
 /* animation */
+
 .logosection h1 {
   left: 0;
   animation-name: slide;
@@ -51,12 +52,13 @@ header {
   padding-top: 20px;
 }
 
-.tagline p{
+.tagline p {
   font-size: 12px;
   padding-top: 5px;
 }
 
 /* background gradients */
+
 .orangepink {
   background: linear-gradient(to top right, #fdc260, #e83a9b);
 }
@@ -65,11 +67,9 @@ header {
   background: linear-gradient(to top right, #ffc7cf, #4024f1);
 }
 
-
-
 /* about section */
 
-#about{
+#about {
   padding: 50px;
   margin-bottom: 0;
   position: relative;
@@ -83,8 +83,8 @@ header {
 }
 
 #spotify {
-display: inline-block;
-position: absolute;
+  display: inline-block;
+  position: absolute;
   right: 50px;
 }
 
@@ -101,7 +101,6 @@ position: absolute;
   padding: 50px;
 }
 
-
 .bordercopy p {
   border: 5px solid white;
   padding: 40px 100px 100px 40px;
@@ -109,8 +108,8 @@ position: absolute;
 }
 
 .bordercopy p::first-line {
-    font-weight: 600;
-  }
+  font-weight: 600;
+}
 
 .show-copy {
   display: inline-block;
@@ -126,9 +125,9 @@ position: absolute;
 
 #BabyDriver-podcastimage {
   display: inline-block;
-position: absolute;
-margin-top: 175px;
-margin-left: 100px;
+  position: absolute;
+  margin-top: 175px;
+  margin-left: 100px;
 }
 
 #Insecure-podcastimage {
@@ -188,7 +187,6 @@ margin-left: 100px;
   opacity: 1;
 }
 
-
 /* video sliders */
 
 .fancybox-content video {
@@ -202,11 +200,11 @@ margin-left: 100px;
   margin-top: -70px;
 }
 
-video#atlantavideo1, #atlantavideo2, #atlantavideo3, #atlantavideo4, #babydriver1, #babydriver2, #babydriver3, #babydriver4, #babydriver5, #insecurevideo1, #insecurevideo2, #insecurevideo3, #insecurevideo4, #insecurevideo5, #PLLvideo1, #PLLvideo2, #PLLvideo3, #PLLvideo4, #PLLvideo5  {
-    display: block !important;
-    width: 500px;
-    margin: 0 auto;
-  }
+video#atlantavideo1, #atlantavideo2, #atlantavideo3, #atlantavideo4, #babydriver1, #babydriver2, #babydriver3, #babydriver4, #babydriver5, #insecurevideo1, #insecurevideo2, #insecurevideo3, #insecurevideo4, #insecurevideo5, #PLLvideo1, #PLLvideo2, #PLLvideo3, #PLLvideo4, #PLLvideo5 {
+  display: block !important;
+  width: 500px;
+  margin: 0 auto;
+}
 
 /* footer */
 
@@ -218,6 +216,7 @@ h2 {
   font-weight: 400;
   font-size: 25px;
 }
+
 ul {
   list-style: none;
 }
@@ -253,9 +252,8 @@ nav.footernav {
   vertical-align: top;
 }
 
-
 form {
-   width: 50%;
+  width: 50%;
 }
 
 label {
